@@ -66,8 +66,18 @@ ConcatOperator.java
 ZipOperator.java
 
 ### Folder Structure
-reactive-demo/ ├─ src/ │ ├─ main/ │ │ ├─ java/ │ │ │ └─ com/example/ │ │ │ ├─ MapOperator.java │ │ │ ├─ FilterOperator.java │ │ │ ├─ FlatMapOperator.java │ │ │ └─ ... ├─ pom.xml
-
+```bash
+reactive-demo/
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  └─ com/example/
+│  │  │     ├─ MapOperator.java
+│  │  │     ├─ FilterOperator.java
+│  │  │     ├─ FlatMapOperator.java
+│  │  │     └─ ...
+├─ pom.xml
+```
 ## Run
 
 ### Using Maven
