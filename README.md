@@ -48,7 +48,7 @@ Update your `pom.xml` to include the following inside the main `<project>` tags:
 </dependencies>
 ```
 
-4. Create files
+### 4. Create files
 Create separate .java files for each operator, e.g.:
 
 MapOperator.java
@@ -66,16 +66,7 @@ ConcatOperator.java
 ZipOperator.java
 
 ### Folder Structure
-reactive-demo/
-├─ src/
-│  ├─ main/
-│  │  ├─ java/
-│  │  │  └─ com/example/
-│  │  │     ├─ MapOperator.java
-│  │  │     ├─ FilterOperator.java
-│  │  │     ├─ FlatMapOperator.java
-│  │  │     └─ ...
-├─ pom.xml
+reactive-demo/ ├─ src/ │ ├─ main/ │ │ ├─ java/ │ │ │ └─ com/example/ │ │ │ ├─ MapOperator.java │ │ │ ├─ FilterOperator.java │ │ │ ├─ FlatMapOperator.java │ │ │ └─ ... ├─ pom.xml
 
 ## Run
 
