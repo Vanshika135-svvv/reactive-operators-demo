@@ -27,15 +27,18 @@ Implement and understand key Reactive Streams Operators using **Project Reactor*
 ```bash
 mkdir reactive-operators-demo
 cd reactive-operators-demo
-
+```
 ### 2. Initialize Maven project
-bash
+
+```bash
 mvn archetype:generate -DgroupId=com.example -DartifactId=reactive-demo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 cd reactive-demo
+```
 
 ### 3. Add Project Reactor dependency
-Update your pom.xml to include:
+Update your `pom.xml` to include the following inside the main `<project>` tags:
 
+```xml
 <dependencies>
     <dependency>
         <groupId>io.projectreactor</groupId>
@@ -43,8 +46,9 @@ Update your pom.xml to include:
         <version>3.6.0</version>
     </dependency>
 </dependencies>
+```
 
-### 4. Create files
+4. Create files
 Create separate .java files for each operator, e.g.:
 
 MapOperator.java
@@ -62,7 +66,6 @@ ConcatOperator.java
 ZipOperator.java
 
 ### Folder Structure
-
 reactive-demo/
 ├─ src/
 │  ├─ main/
@@ -73,19 +76,21 @@ reactive-demo/
 │  │  │     ├─ FlatMapOperator.java
 │  │  │     └─ ...
 ├─ pom.xml
-Run
-Using Maven
 
-bash
+## Run
+
+### Using Maven
+```bash
 mvn clean compile exec:java -Dexec.mainClass=com.example.MapOperator
-Replace MapOperator with the operator file you want to run.
+```
 
-Using Java directly
-bash
+## Run
+
+### Using Java directly
+```bash
 cd target/classes
 java com.example.MapOperator
 
-Notes
-    Each operator demonstrates a single concept.
-
-    You can also use one file ReactiveOperatorsExample.java and uncomment operators one at a time.
+## Notes
+* Each operator demonstrates a single concept.
+* You can also use one file `ReactiveOperatorsExample.java` and uncomment operators one at a time.
